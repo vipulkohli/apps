@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+    <title>New Customer Entry Form</title>
+   <script type="text/javascript"> 
+      function onBodyLoad() {
+document.getElementById("addButton").addEventListener("click", addCustomer);
+}
+
+function addCustomer(){
+ var db = window.openDatabase("shopping", "1.0", "Shopping Database", 1000000);
+  db.transaction(insertRow, errorIns, successIns);
+    }
+  
+ function insertRow(tx) {
+ var nameOfCustomer = document.getElementById("custname").value;
+var emailID = document.getElementById("emailid").value;
+     tx.executeSql('CREATE TABLE IF NOT EXISTS Customers (id INTEGER PRIMARY KEY AUTOINCREMENT, Name TEXT NOT NULL, EmailID TEXT NOT NULL)');
+      tx.executeSql('INSERT INTO Customers (Name, EmailID) VALUES("'+ nameOfCustomer +'", "'+ emailID + '")');
+} 
+
+ function successIns() {
+ document.getElementById("result").innerHTML="Customer information successfully inserted";  
+     }
+
+
+function errorIns(err) {
+ document.getElementById("result").innerHTML="Error occurred while inserting row: " + err.code;  
+}
+
+    </script>
+  </head>
+  <body onload="onBodyLoad()">
+    <form>
+  Enter Customer Name    <input type="text" id="custname"><br/>
+  Enter Email ID  <br/>  <input type="text" id="emailid"><br/><br/>
+      <input type="button" id="addButton" value="Add Customer">
+    </form>
+      <div id="result"></div>
+ </body>
+</html>

@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="app_name">TableLayoutApp</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_table_layout_app">TableLayoutAppActivity</string>
+
+</resources>

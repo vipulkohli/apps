@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <TextView
+       android:id="@+id/country_view"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Country Name" />
+    <EditText
+       android:id="@+id/country_name"
+       android:layout_height="wrap_content"
+       android:layout_width="250dp" 
+       android:layout_toRightOf="@id/country_view" />
+    <TextView
+       android:id="@+id/stdcode_view"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="STD Code"
+       android:layout_below="@id/country_name" />
+    <EditText
+       android:id="@+id/std_code"
+       android:layout_height="wrap_content"
+       android:layout_width="100dp"
+       android:layout_marginLeft="20dip"
+       android:layout_toRightOf="@id/stdcode_view"
+       android:layout_below="@id/country_name" />
+    <Button
+        android:text="Delete"
+        android:id="@+id/delete_stdinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_below="@id/std_code"
+        android:layout_marginLeft="70dip"  />
+    <Button
+        android:text="Update"
+        android:id="@+id/update_stdinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_toRightOf="@id/delete_stdinfo"
+        android:layout_below="@id/std_code" 
+        android:layout_marginLeft="10dip"/>
+    
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ValuesResourcesApp</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_values_resources_app">ValuesResourcesAppActivity</string>
+    <string name="str_name">XYZ Restaurant</string>
+    <string name="str_address">11, Hill View Street, New York</string>
+    <string name="str_message"><b>Welcome</b></string> 
+</resources>

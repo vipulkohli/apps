@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+    <title>Customers List</title>
+   <script type="text/javascript"> 
+      function onBodyLoad() {
+  var db = window.openDatabase("shopping", "1.0", "Shopping Database", 1000000);
+   db.transaction(execQuery, errorQuery);
+}
+
+ function execQuery(tx) {
+       tx.executeSql('SELECT * FROM Customers',[], successQuery, errorQuery);
+       }
+       
+    function successQuery(tx,result){   
+                var custinfo="";
+    var len = result.rows.length;
+     var element = document.getElementById('CustomersList');  
+for (var i=0; i<len; i++){
+  custinfo+= 'Name: ' + result.rows.item(i).Name + '<br />';
+   custinfo+= 'Email ID: ' + result.rows.item(i).EmailID + '<br /><br/>';
+ }
+  element.innerHTML =custinfo;
+} 
+
+ 
+function errorQuery(err) {
+ document.getElementById("CustomersList").innerHTML="Error occurred while listing rows: " + err.code;  
+}
+
+    </script>
+  </head>
+  <body onload="onBodyLoad()">
+       <div id="CustomersList"></div> 
+ </body>
+</html>

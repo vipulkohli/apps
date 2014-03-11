@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <title>PhoneGap Application</title>
+  <script type="text/javascript" charset="utf-8" src="cordova-2.0.0.js"> </script>
+ <script type="text/javascript"> 
+ function onBodyLoad(){
+ document.addEventListener("deviceready", PhonegapLoaded, false);
+}
+
+function PhonegapLoaded(){
+var options = new ContactFindOptions();
+options.filter=""; 
+options.multiple=true; 
+filter = ["displayName"]; 
+navigator.contacts.find(filter, onSuccess, onError, options);
+}
+
+function onSuccess(contacts) {
+var contnames="";
+        var element = document.getElementById('contactsinfo');
+for(var i=0;i<contacts.length;i++){
+        contnames+= 'Name: ' + contacts[i].displayName + '<br />';
+   }
+   element.innerHTML =contnames;
+    }
+
+    function onError(error) {
+        alert('Sorry! Some error has occurred');
+    }
+
+     </script>
+ </head>
+ <body onload="onBodyLoad()">
+ Contacts Information
+      <div id="contactsinfo"></div>
+ </body>
+</html>

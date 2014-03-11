@@ -1,0 +1,21 @@
+<resources>
+
+    <string name="app_name">PreferenceFragApp</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_preference_frag_app">PreferenceFragAppActivity</string>
+<string-array name="fruits">
+        <item>Apple</item> 
+        <item>Mango</item> 
+        <item>Orange</item> 
+        <item>Grapes</item> 
+        <item>Banana</item> 
+    </string-array> 
+    <string-array name="fruitselected"> 
+        <item>You have selected Apple</item> 
+        <item>You have selected Mango</item> 
+        <item>You have selected Orange</item> 
+        <item>You have selected Grapes</item> 
+        <item>You have selected Banana</item>  
+    </string-array>
+    
+</resources>

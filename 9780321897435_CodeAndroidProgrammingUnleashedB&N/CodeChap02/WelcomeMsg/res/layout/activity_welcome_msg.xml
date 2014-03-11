@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:orientation="vertical"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+     <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter your name:"/>
+     <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_name"/>
+     <Button
+          android:id="@+id/click_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Click Me"
+          android:onClick="dispMessage" />
+     <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/response"/>
+</LinearLayout>

@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+     <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select the type of hotel"/>
+     <RadioGroup android:id="@+id/group_hotel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+          <RadioButton android:id="@+id/radio_fivestar"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Five Star " />
+          <RadioButton android:id="@+id/radio_threestar"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Three Star" />
+     </RadioGroup>
+     <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select the type of room"/>
+     <RadioGroup android:id="@+id/group_room"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+           <RadioButton android:id="@+id/radio_suite"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Grand Suite " />
+           <RadioButton android:id="@+id/radio_luxury"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Luxury Room" />
+           <RadioButton android:id="@+id/radio_ordinary"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Ordinary Room" /> 
+     </RadioGroup>
+     <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hoteltype"/>
+</LinearLayout>

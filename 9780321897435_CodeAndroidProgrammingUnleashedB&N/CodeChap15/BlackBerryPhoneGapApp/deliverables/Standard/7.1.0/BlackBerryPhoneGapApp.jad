@@ -1,0 +1,16 @@
+MIDlet-Name: BlackBerryPhoneGapApp
+MIDlet-Version: 1.0.0
+MIDlet-Vendor: BlackBerry Developer
+MIDlet-Jar-URL: BlackBerryPhoneGapApp.jar
+MIDlet-Jar-Size: 4413
+MicroEdition-Profile: MIDP-2.0
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-1: ,img/icon.png,
+RIM-MIDlet-Flags-1: 0
+Manifest-Version: 1.0
+RIM-COD-URL: BlackBerryPhoneGapApp.cod
+RIM-COD-Size: 2648
+RIM-COD-Creation-Time: 1347624755
+RIM-COD-Module-Name: BlackBerryPhoneGapApp
+RIM-COD-Module-Dependencies: net_rim_cldc
+RIM-COD-SHA1: bd 87 5f 21 27 77 e3 4a 2f 83 31 1d 45 50 7c 66 08 4d 02 af

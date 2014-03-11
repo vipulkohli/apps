@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >   
+    <TextView  
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content" 
+        android:id="@+id/response" />  
+            
+       <ListView
+        android:id="@+id/prodrec"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:drawSelectorOnTop="false"/> 
+    <TableLayout
+        android:id="@+id/add_table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TableRow >
+            <TextView
+                android:text="Product Code:"
+                android:padding="3dip" />
+            <EditText
+                android:id="@+id/prod_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </TableRow>
+        <TableRow >
+            <TextView   
+                android:text="Product Name:"
+                android:padding="3dip" />
+            <EditText
+                android:id="@+id/prod_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:minWidth="150dip" />
+        </TableRow>
+        <TableRow >
+            <TextView
+                android:text="Product Price:"
+                android:padding="3dip" />     
+            <EditText
+                android:id="@+id/prod_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="50dip" />
+        </TableRow>
+        <TableRow >
+            <Button
+                android:id="@+id/add_button"
+                android:text="Add Product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dip" />
+            <Button
+                android:id="@+id/cancel_button"
+                android:text="Cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dip" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

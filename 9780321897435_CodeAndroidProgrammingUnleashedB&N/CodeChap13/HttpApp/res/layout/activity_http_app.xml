@@ -1,0 +1,21 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <EditText 
+        android:id="@+id/url_add"
+        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:hint="Enter URL of the image"   />
+    <Button  
+        android:id="@+id/go_button"  
+        android:text="Go"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_toRightOf="@id/url_add" />
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_below="@id/url_add"  />
+</RelativeLayout>

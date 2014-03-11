@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory android:title="Category 1">
+        <CheckBoxPreference
+            android:title="Pizza"
+            android:defaultValue="false"
+            android:key="Pizzakey" />
+        <EditTextPreference android:key="Namekey"
+            android:title="Enter your name: "
+            android:dialogTitle="Enter your information">
+        </EditTextPreference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Category 2">
+        <RingtonePreference android:showDefault="true"
+            android:key="Audio" android:title="Select sound"
+            android:ringtoneType="notification">
+        </RingtonePreference>
+        <ListPreference android:title="Fruits List "
+            android:key="fruits_list"
+            android:entries="@array/fruits"
+            android:entryValues="@array/fruitselected"
+            android:dialogTitle="Choose a fruit">
+        </ListPreference>
+    </PreferenceCategory>
+    <Preference
+        android:title="Submit"
+        android:key="submitPref" />
+</PreferenceScreen>

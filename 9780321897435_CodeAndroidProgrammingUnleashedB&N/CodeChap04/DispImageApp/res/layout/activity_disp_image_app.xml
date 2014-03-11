@@ -1,0 +1,19 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView 
+        android:id="@+id/image_toview"
+        android:src="@drawable/bintupic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true" />
+    <ToggleButton android:id="@+id/change_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOn="Previous Image"
+        android:textOff="Next Image"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dip" />
+</LinearLayout>

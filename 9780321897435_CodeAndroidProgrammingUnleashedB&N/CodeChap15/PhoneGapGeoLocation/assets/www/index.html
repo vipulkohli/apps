@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <title>PhoneGap Application</title>
+  <script type="text/javascript" charset="utf-8" src="cordova-2.0.0.js"></script>
+ <script type="text/javascript"> 
+ function onBodyLoad() {
+document.addEventListener("deviceready", PhonegapLoaded, false);
+}
+function PhonegapLoaded(){
+ navigator.geolocation.watchPosition(onSuccess, onError, {enableHighAccuracy: true});
+}
+
+function onSuccess(position) {
+        var element = document.getElementById('geolocationinfo');
+        element.innerHTML = 'Latitude: '           + position.coords.latitude              + '<br />' +
+                            'Longitude: '          + position.coords.longitude             + '<br />' +
+                             'Timestamp: '          + new Date(position.timestamp)          + '<br />';
+    }
+
+    function onError(error) {
+        alert('code: '    + error.code    + '\n' +
+              'message: ' + error.message + '\n');
+    }
+    </script>
+ </head>
+ <body onload="onBodyLoad()">
+      <div id="geolocationinfo">GeoLocation Information</div>
+ </body>
+</html>

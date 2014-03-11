@@ -1,0 +1,41 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+       <item android:id="@+id/create_datab"
+        android:title="Create Database" 
+        android:icon="@drawable/ic_launcher" />
+    <item android:id="@+id/insert_rows"
+        android:title="Insert Rows" 
+        android:icon="@drawable/ic_launcher" />
+    <item android:id="@+id/list_rows"
+        android:title="List Rows" />
+    <item android:id="@+id/search_row"
+        android:title="Search" 
+        android:icon="@drawable/ic_launcher">
+                <menu>
+            <group android:checkableBehavior="single">
+                <item android:id="@+id/search_code"
+                    android:title="Search on Code" 
+                    android:checked="true" />
+                <item android:id="@+id/search_name"
+                    android:title="Search on Name" 
+                    android:alphabeticShortcut="n"       
+                    android:numericShortcut="6" />
+                <item android:id="@+id/search_price"
+                    android:title="Search on Price" />
+            </group>
+        </menu>
+        </item>
+    <item android:id="@+id/delete_row"
+        android:title="Delete" />
+    <item android:id="@+id/update_row"
+        android:title="Update" 
+        android:icon="@drawable/ic_launcher" />
+    <item android:id="@+id/sort_rows"
+        android:title="Sort Table" 
+        android:checkable="true"
+        android:checked="true" />
+    <item android:id="@+id/merge_row"
+        android:title="Merge Rows" 
+        android:alphabeticShortcut="m"       
+        android:numericShortcut="4"  />
+
+</menu>

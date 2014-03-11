@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="app_name">RadioButtonApp</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_radio_button_app">RadioButtonAppActivity</string>
+
+</resources>

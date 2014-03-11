@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="app_name">DateTimePickerApp</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_date_time_picker_app">DateTimePickerAppActivity</string>
+
+</resources>

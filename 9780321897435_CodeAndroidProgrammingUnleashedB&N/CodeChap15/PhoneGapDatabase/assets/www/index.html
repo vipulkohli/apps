@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+    <title>PhoneGap Application</title>
+    <script type="text/javascript" charset="utf-8" src="cordova-2.0.0.js"> </script>
+    <script type="text/javascript"> 
+        function onBodyLoad(){
+            document.addEventListener("deviceready", PhonegapLoaded, false);
+        }
+        function PhonegapLoaded(){
+document.getElementById("createButton").addEventListener("click", createDB);
+   
+    }
+
+function createDB(){
+ var result = document.getElementById("result").value;
+    try {
+     var db = window.openDatabase("shopping", "1.0", "Shopping Database", 1000000);
+ document.getElementById("result").innerHTML="Database successfully created";  
+} catch (e) {
+ document.getElementById("result").innerHTML="Error occured while creating the database";  
+}
+}
+
+    </script>
+  </head>
+  <body onload="onBodyLoad()">
+      <input type="button" id="createButton" value="Create Database"> <br/>
+      <a href="NewCustomer.html"> Add New Customer </a> <br/>
+        <a href="ListCustomer.html"> Customers List </a>
+   <div id="result"></div>
+ </body>
+</html>

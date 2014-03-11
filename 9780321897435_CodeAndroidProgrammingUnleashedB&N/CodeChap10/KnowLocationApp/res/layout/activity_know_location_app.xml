@@ -1,0 +1,15 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">  
+    
+    <com.google.android.maps.MapView 
+        android:id="@+id/mapvw"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:enabled="true"
+        android:clickable="true"
+<!--         Please provide the actual API Key in below attribute -->
+        android:apiKey="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" />
+    
+</LinearLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ListViewApp</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_list_view_app">ListViewAppActivity</string>
+    <string-array name="fruits">
+        <item>Apple</item>
+        <item>Mango</item>
+        <item>Orange</item>
+        <item>Grapes</item>
+        <item>Banana</item>
+    </string-array>  
+</resources>

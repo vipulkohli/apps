@@ -1,0 +1,97 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >   
+    <TextView 
+        android:id="@+id/email_form"
+        android:text = "Email Form"           
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:typeface="serif"
+        android:textSize="18sp" 
+        android:textStyle="bold" 
+        android:padding="10dip"
+        android:layout_centerHorizontal="true"/>
+    <TextView 
+        android:id="@+id/to_addressview"
+        android:text = "To:"  
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:layout_below="@id/email_form" />   
+    <EditText 
+        android:id="@+id/toaddresses"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@id/email_form"
+        android:layout_toRightOf="@id/to_addressview"
+        android:singleLine="true" />
+    <TextView 
+        android:id="@+id/cc_addressview"
+        android:text = "Cc:"  
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/to_addressview"
+        android:layout_margin="10dip" /> 
+    <EditText 
+        android:id="@+id/ccaddresses"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:singleLine="true" 
+        android:layout_below="@id/toaddresses"
+        android:layout_toRightOf="@id/cc_addressview" />
+    <TextView 
+        android:id="@+id/bcc_addressview"
+        android:text = "Bcc:"  
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cc_addressview"
+        android:layout_margin="10dip" /> 
+    <EditText 
+        android:id="@+id/bccaddresses"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:singleLine="true" 
+        android:layout_below="@id/ccaddresses"
+        android:layout_toRightOf="@id/bcc_addressview" />
+    <TextView 
+        android:id="@+id/subjectview"
+        android:text = "Subject:"  
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bcc_addressview"
+        android:layout_margin="10dip"
+        android:paddingTop="10dip"/> 
+    <EditText 
+        android:id="@+id/emailsubject"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:singleLine="true" 
+        android:layout_below="@id/bccaddresses"
+        android:layout_toRightOf="@id/subjectview"
+        android:layout_marginTop="10dip" />
+    <TextView 
+        android:id="@+id/emailtextview"
+        android:text = "Message:"  
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subjectview"
+        android:layout_margin="10dip" /> 
+    <EditText 
+        android:id="@+id/emailtext"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:lines="5"
+        android:layout_below="@id/emailsubject"
+        android:layout_toRightOf="@id/emailtextview" />
+    <Button 
+        android:id="@+id/send_button"
+        android:text="Send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="25dip"
+        android:paddingRight="25dip"
+        android:layout_marginTop="10dip"
+        android:layout_below="@id/emailtext" />
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/create_datab"
+        android:title="Create Database" 
+        android:icon="@drawable/create"
+        android:showAsAction="ifRoom|withText" />
+    <item android:id="@+id/insert_rows"
+        android:title="Insert Rows" 
+        android:icon="@drawable/insert"
+        android:showAsAction="ifRoom" />
+    <item android:id="@+id/list_rows"
+        android:title="List Rows" 
+        android:showAsAction="ifRoom" />
+    <item android:id="@+id/search_row"
+        android:title="Search" 
+        android:icon="@drawable/search"
+        android:showAsAction="ifRoom|withText" >
+            <menu>
+            <group android:checkableBehavior="single">
+                <item android:id="@+id/search_code"
+                    android:title="Search on Code" 
+                    android:checked="true" />
+                <item android:id="@+id/search_name"
+                    android:title="Search on Name" 
+                    android:alphabeticShortcut="n"       
+                    android:numericShortcut="6" />
+                <item android:id="@+id/search_price"
+                    android:title="Search on Price" />
+            </group>
+        </menu>
+    </item>
+    <item android:id="@+id/delete_row"
+        android:title="Delete"
+        android:showAsAction="never" 
+        android:alphabeticShortcut="d" 
+        android:checkable="true" />
+    <item android:id="@+id/update_row"
+        android:title="Update" 
+        android:icon="@drawable/update" 
+        android:showAsAction="always" 
+        android:alphabeticShortcut="u"
+        android:numericShortcut="4" />
+</menu>
